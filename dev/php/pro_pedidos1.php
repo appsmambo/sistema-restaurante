@@ -71,7 +71,7 @@
 	function agregar(a){
 		var variable_post = a;
 		var b = 1;
-		$.post("../sql/grd_pedidos.php", { variable: variable_post , mesa: <?php echo $vlMesa;?> , agregado: b }, function(data){
+		$.post("../sql/grd_pedidos.php", { variable: variable_post , mesa: '<?php echo $vlMesa;?>' , agregado: b }, function(data){
 		$("#pedido").html(data);
 		});
 	}

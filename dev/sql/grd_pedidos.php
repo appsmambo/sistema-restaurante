@@ -29,7 +29,7 @@
 
     $detalle = "";
     @mysqli_query($con, "SET NAMES 'utf8'");
-		$consulta = mysqli_query($con, "select cant, descripcion, comentario, precio, estado, destino, user_registro, fec_registro, user_modifica, fec_modifica, id from tmp_pedidos where id_empresa='$vgCodEmp' and id_sucursal='$vgCodSuc' and id_mesa='$vlMesa' and estado<>9 order by id desc");
+    $consulta = mysqli_query($con, "select cant, descripcion, comentario, precio, estado, destino, user_registro, fec_registro, user_modifica, fec_modifica, id from tmp_pedidos where id_empresa='$vgCodEmp' and id_sucursal='$vgCodSuc' and id_mesa='$vlMesa' and estado<>9 order by id desc");
 		if (mysqli_num_rows($consulta) > 0){
 ?>
     <table width="100%" class="table no-margin">
@@ -52,6 +52,7 @@
             $porpagar = 0;
             while ($row = mysqli_fetch_array($consulta)){
               $detalle[] = $row;
+              print_r($detalle);
 				$vlNomEst = "Anotado";
 				$vlColor  = "info";
 				if($row[estado]==0){

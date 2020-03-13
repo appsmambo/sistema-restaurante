@@ -1,0 +1,7 @@
+
+
+Sólo tener en cuenta unas consideraciones :
+1. Hay compras al contado y a crédito.
+2. Hay compras con guía o notas, boleta de venta y factura
+3. Los bienes a comprar son : insumos (carnes,verduras,abarrotes,etc), mercadería .(gaseosa, cerveza,vinos,etc) activos (platos, cubiertos, etc )
+4. El sistema es multi empresa y sucursal...el módulo es independiente para cada uno. ...así podremos llevar su control de forma independiente.
